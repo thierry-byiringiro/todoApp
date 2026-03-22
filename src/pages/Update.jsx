@@ -21,13 +21,13 @@ function Update() {
   const [text,setText] = useState(getDesiredTodo?.text || "");
   return (
     <>
-      <Form method="post" className="flex space-x-3 mt-10">
+      <Form method="post" className="flex space-x-3 mt-10 p-4">
         <input
           type="text"
           name="task"
           value={text}
           onChange={(e) => setText(e.target.value)}
-          className="h-10 rounded-md border w-full px-3 outline-none focus:ring-1"
+          className="h-10 rounded-md border-2 w-full px-3 outline-none focus:ring-1"
         />
 
         <input
